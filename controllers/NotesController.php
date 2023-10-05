@@ -34,9 +34,7 @@ class NotesController extends Controller
 
     public function actionDeleteNotes($id)
     {
-        $del = Note::find()->where(['id'=>$id])->one();
-        $del->delete();
-        $Notes = Note::find()->all();
+        Note::deleteNote(id);
         return $this->goBack();
     }
 

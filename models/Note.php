@@ -10,4 +10,9 @@ class Note extends ActiveRecord
     {
         return 'notes';
     }
+
+    public static function deleteNote($id)
+    {
+        Static::find()->where(['id'=>$id])->one()->delete();
+    }
 };
