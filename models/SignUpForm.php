@@ -34,11 +34,5 @@ class SignUpForm extends Model
         return $user;
     }
 
-    public function equal($params)
-    {
-        if(!($params['password']==$params['passwordConfirm'])){
-            $this->addError('passwords are not equal');
-        }
-    }
 
 }
