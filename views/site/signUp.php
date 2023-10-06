@@ -11,7 +11,6 @@ use yii\widgets\ActiveForm;
     
     <?= $form->field($model, 'password')->passwordInput() ?>
     
-    <?= $form->field($model, 'passwordConfirm')->passwordInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Отправить', ['class' => 'btn btn-primary']) ?>
